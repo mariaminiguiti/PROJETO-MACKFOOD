@@ -1,0 +1,149 @@
+ /* ======= ESTILIZAÇÃO GLOBAL ======= */
+ body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #ececec);
+}
+
+/* ======= MENU DE NAVEGAÇÃO ======= */
+nav {
+    background-color: rgb(200, 28, 28);
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 60px; 
+    width: auto; 
+}
+
+/* Links do menu */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;  
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #8b0000;
+}
+
+/* Barra de busca */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.search-box button {
+    background-color: rgb(200, 28, 28);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.search-box button:hover {
+    background-color: #8b0000;
+}
+
+/* ======= SEÇÕES ======= */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======= CATEGORIAS ======= */
+article {
+    display: inline-block;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 160px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+        /* ======= SEÇÃO DE RESTAURANTES EM DESTAQUE ======= */
+.restaurantes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Cada restaurante */
+figure {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    width: 220px; /* Tamanho fixo para manter alinhamento */
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ajuste nas imagens dentro do figure */
+figure img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Efeito hover */
+figure:hover {
+    transform: scale(1.07);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

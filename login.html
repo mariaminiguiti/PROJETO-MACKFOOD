@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="img/GameBeatz.png" type="image/x-icon">
+    <link rel="shortcut icon" href="MACKFOODLOGOTIPE.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raissa Oliveira Santana">
+    <meta name="author" content="Maria Isabelle Miniguiti">
     <link rel="stylesheet" href="login.css">
-    <title>GameBeatZ - Login</title>
+    <title>LOGIN</title>
 </head>
 <body>
     <main class="main">
@@ -18,17 +20,19 @@
                 </header>
                 <section class="container-inputs">
                     <section class="inputs">
-                        <p>Username</p>
-                        <input style="font-family: monospace;" id="user" placeholder="Insira seu username" type="text">
+                        <p>RA:</p>
+                        <input id="ra" placeholder="Insira seu RA" type="number"
+                            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px;background-color: #00000000; color: #000000cc; border: 1px solid #cc141d;">
                     </section>
                     <section class="inputs">
                         <p>Senha</p>
-                        <input style="font-family: monospace;" id="senha" placeholder="Insira sua senha" type="password">
+                        <input id="senhalogin" placeholder="Insira sua senha" type="password"
+                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px;background-color: #00000000; color: #000000cc; border: 1px solid #cc141d;">
                     </section>
                 </section>
                 <footer class="login">
                     <button onclick="entrar()">
-                        <h2>Login</h2>
+                        <h2>LOGIN</h2>
                     </button>
                 </footer>
                 <nav class="semconta">
@@ -39,3 +43,9 @@
     </main>
 </body>
 </html>
+
+<script>
+     function entrar(){
+        window.location.href = "homepage.html";
+     }
+</script>
